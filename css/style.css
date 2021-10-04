@@ -74,11 +74,13 @@ img {
 
 @media all and (max-width: 420px){
 
-.row{
-  display: flex;
-}
+  .row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 body{
-  font-size: 25px;
+  font-size: 30px;
 }
 
 
